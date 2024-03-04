@@ -20,18 +20,16 @@ require_once __DIR__ . "/partials/elements.php";
                     <th scope="col">Language</th>
                     <th scope="col">Vote</th>
                     <th scope="col">Genre</th>
-                    <th scope="col">Genre description</th>
                 </tr>
             </thead>
             <tbody>
-                <?php require_once __DIR__ . "./data/db.php"; ?>
+                <?php require_once __DIR__ . "/data/db.php"; ?>
                 <?php foreach($films as $film): ?>
                 <tr>
                     <td><?= $film->get_title() ?></td>
                     <td><?= $film->language ?></td>
                     <td><?= $film->vote ?></td>
-                    <td><?= $film->genre->name ?></td>
-                    <td><?= $film->genre->description ?></td>
+                    <td><?= $film->genre->name . ': ' . $film->genre->description ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
