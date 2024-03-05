@@ -11,3 +11,4 @@ class Movie extends Production{
         $this->cashier = $cashier;
     }
 }
+

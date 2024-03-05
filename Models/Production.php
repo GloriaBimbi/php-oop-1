@@ -1,6 +1,8 @@
 <?php
 
 require __DIR__ . "/Genre.php";
+require __DIR__ . "/Movie.php";
+require __DIR__ . "/TvSerie.php";
 
 class Production{
     public string $title;
