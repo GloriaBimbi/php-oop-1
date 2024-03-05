@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . "/Production";
+require_once "Production.php";
 
 class TvSerie extends Production{
     public $seasons;

@@ -60,7 +60,7 @@ require_once __DIR__ . "/partials/elements.php";
                     <td><?= $tv_serie->vote ?></td>
                     <td><?= $tv_serie->genre->name . ': ' . $tv_serie->genre->description ?></td>
                     <td><?= $tv_serie->seasons ?></td>
-                    <td><?= $tv_serie->episodes . '€' ?></td>
+                    <td><?= $tv_serie->episodes ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
