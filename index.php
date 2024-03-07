@@ -13,7 +13,8 @@ require_once __DIR__ . "/partials/elements.php";
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="mb-5">Movies:</h1>
+        <h1 class="mb-5 text-center">PRODUCTIONS</h1>
+        <h3 class="mb-5">Movies:</h3>
         <table class="table table-primary">
             <thead>
                 <tr>
@@ -34,12 +35,12 @@ require_once __DIR__ . "/partials/elements.php";
                     <td><?= $movie->vote ?></td>
                     <td><?= $movie->genre->name . ': ' . $movie->genre->description ?></td>
                     <td><?= $movie->duration . 'min' ?></td>
-                    <td><?= $movie->cashier . '€' ?></td>
+                    <td><?= '€' . $movie->cashier . '.000.000' ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <h1 class="mb-5 mt-5">Tv Series:</h1>
+        <h3 class="mb-5 mt-5">Tv Series:</h3>
         <table class="table table-primary">
             <thead>
                 <tr>

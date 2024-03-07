@@ -8,6 +8,4 @@ class Genre{
         $this->name = $name;
         $this->description = $description;
     }
-
-
 }
